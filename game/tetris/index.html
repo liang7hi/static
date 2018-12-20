@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>俄罗斯方块</title>
+	<style>
+	body{
+		background-image: -webkit-linear-gradient(top , skyblue , pink , skyblue);
+	}
+	table{
+		background-color: #333;
+	}
+		table,tr,td{
+			border-collapse: collapse;
+			border: 1px solid #555;
+		}
+		td{
+			width: 26px;
+			height: 26px;
+		}
+		#zhen{
+			color: purple;
+		}
+		.b0{
+			background-image: -webkit-linear-gradient(top left , #B71C1C , #F44336);
+		}
+		.b1{
+			background-image: -webkit-linear-gradient(top left , #DCE775 , #388E3C);
+		}
+		.b2{
+			background-image: -webkit-linear-gradient(top left , #2196F3 , #1565C0);
+		}
+		.b3{
+			background-image: -webkit-linear-gradient(top left , #00BCD4 , #00838F);
+		}
+		.b4{
+			background-image: -webkit-linear-gradient(top left , #3F51B5 , #283593);
+		}
+		.b5{
+			background-image: -webkit-linear-gradient(top left , #A1887F , #5D4037);
+		}
+		.b6{
+			background-image: -webkit-linear-gradient(top left , #9C27B0 , #4527A0);
+		}
+		h3{
+			position: absolute;
+			width: 200px;
+			height: 100px;
+			left: 500px;
+			top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div id="app"></div>
+	<div id="zhen"></div>
+	<h3 id="fenshu"></h3>
+	<script type="text/javascript" src = "js/Game.js"></script>
+	<script type="text/javascript" src = "js/Block.js"></script>
+	<script type="text/javascript" src = "js/Map.js"></script>
+	<script type="text/javascript">
+			var game = new Game();
+	</script>
+</body>
+</html>

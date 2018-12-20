@@ -1,0 +1,178 @@
+body{
+			font-size: 12px;
+			color: #8C8C8C;
+			font-family: "Arial","Microsoft Yahei","SimSun";
+		}
+		a{
+			color: #757575;
+			text-decoration: none;
+		}
+		.inner_c
+		{
+			margin: 0 auto;
+			width: 1000px;
+		}
+		.pagetop{
+			width: 100%;
+			height: 651px;
+			position: relative;
+			overflow: hidden;
+		}
+		.pagetop .header{
+			height: 0;
+			position: relative;
+			z-index: 2;
+		}
+		.pagetop .header_c{
+			position: absolute;
+			top: 19px;
+			height: 103px;
+			width: 1000px;
+			left: 0;
+		}
+		.pagetop .header_c .logo{
+			float: left;
+		}
+		.pagetop .header_c .nav{
+			float: left;
+		}
+		.pagetop .header_c .nav li{
+			float: left;
+			text-align: center;
+		}
+		.pagetop .header_c .nav li a{
+			display: block;
+			width: 120px;
+			height: 63px;
+			padding-top: 28px;
+			background: #FFF;
+			border-right: 1px solid #EAEAEA;
+		}
+		.pagetop .header_c .nav li a:hover{
+			border-top: 4px solid #F28D00;
+			background: #F9F9F9;
+			position: relative;
+			top: -4px;
+		}
+		.pagetop .header_c .nav li .chi{
+			display: block;
+			line-height: 26px;
+			font-size: 16px;
+			color: #636363;
+		}
+		.pagetop .header_c .nav li .eng{
+			display: block;
+			line-height: 24px;
+			font-size: 12px;
+			color: #D1C7CA;
+		}
+		/*banner区域*/
+		.pagetop .banner{
+			width: 1920px;
+			height: 665px;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			margin-left: -960px;
+		}
+		.fri{
+			width: 1000px;
+			height: 85px;
+
+		/*	border: 1px solid red;*/
+		}
+		.fri h3{
+			height: 30px;
+			padding-top: 7px;
+			font-size: 16px;
+			font-weight: bold;
+			line-height: 30px;
+			color: #666666;
+		}
+		.fri a{
+			display: block;
+			height: 22px;
+			padding-left: 7px;
+			margin-bottom: 33px;
+			line-height: 22px;
+			color: #666;
+		}
+		.fri a:hover{
+			color: #f28c00;
+		}
+		.quick{
+			width: 1000px;
+			height: 197px;
+			margin: 0 auto;
+		}
+		.quick dl{
+			float: left;
+		}
+		.quick dl.dl1w116{
+			width: 116px;
+			margin-left: 30px;
+		}
+		.quick dl.dl2w115{
+			width: 115px;
+		}
+		.quick dl.dl3w133{
+			width: 133px;
+		}
+		.quick dl.dl4w117{
+			width: 117px;
+		}
+		.quick dl.dl5w116,.quick dl.dl6w116{
+			width: 116px;
+		}
+		.quick dl.dl4w73{
+			width: 73px;
+		}
+		.quick dl dd{
+			font-size: 14px;
+			line-height: 36px;
+			color: #646464;
+		}
+		.quick dl dt{
+			height: 20px;
+			margin-bottom: 10px;
+			color: #646464;
+		}
+		.quick dl dt a{
+			display: block;
+			height: 23px;
+			line-height: 23px;
+			color: #a0a0a0;
+		}
+		.weixin{
+			float: left;
+			width: 102px;
+			text-align: center;
+			margin-top: 7px;
+			margin-right: 50px;
+			float: right;
+		}
+		.weixin .txt{
+			height: 30px;
+			line-height: 30px;
+			color: #888;
+		}
+		.foot{
+			width: 100%;
+			height: 56px;
+			background: #2B2B2B;
+		}
+		.foot .foot_c{
+			width: 1000px;
+			margin: 0 auto;
+		}
+		.foot .foot_c p.copy{
+			float: left;
+			width: 650px;
+			line-height: 56px;
+		}
+		.foot .foot_c p.beian{
+			float: right;
+			line-height: 56px;
+		}
+		.foot .foot_c p a{
+			margin-left: 12px;

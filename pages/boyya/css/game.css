@@ -1,0 +1,628 @@
+	.header{
+			width: 100%;
+			height: 58px;
+			background-color: #191d3a;
+		}
+		.header .header_c{
+			height: 58px;
+		}
+		.header .header_c .logo{
+			float: left;
+			width: 205px;
+			height: 48px;
+			padding: 10px 0 0 20px;
+		}
+		.header .header_c .logo a{
+			display: block;
+			width: 157px;
+			height: 35px;
+			background: url(../images/logo.png) no-repeat;
+			text-indent: -999em;
+			overflow: hidden;
+		}
+		.header .header_c .nav{
+			float: left;
+			width: 526px;
+			height: 58px;
+		}
+		.header .header_c .nav li{
+			float: left;
+			width: 85px;
+			height: 58px;
+			border-right: 1px solid #252947;
+			line-height: 58px;
+			text-align: center;
+		}
+		.header .header_c .nav li.first{
+			border-left: 1px solid #252947;
+		}
+		.header .header_c .nav li a{
+			display: block;
+			color: #818496;
+		}
+		.header .header_c .nav li.current a{
+			background: #252947;
+			color: #e2e4ed;
+		}
+		.header .header_c .nav li a:hover{
+			color: #e2e4ed;
+		}
+		.header .header_c .joinus{
+			float: left;
+			width: 189px;
+			height: 46px;
+			padding-top: 12px;
+		}
+		.header .header_c .joinus a{
+			display: block;
+			width: 98px;
+			height: 32px;
+			border: 1px solid #3aca7a;
+			border-radius: 3px;
+			background: #38b774;
+			color: #ffffff;
+			line-height: 32px;
+			text-align: center;
+		}
+		.header .header_c .joinus a:hover{
+			background: #2ba364;
+		}
+		.header .header_c .lang{
+			float: left;
+			width: 60px;
+			height: 58px;
+			line-height: 58px;
+		}
+		.header .header_c .lang .chi{
+			float: left;
+		}
+		.header .header_c .lang .chi a{
+			color: #38b774;
+		}
+		.header .header_c .lang .eng{
+			float: right;
+		}
+		.header .header_c .lang span a:hover{
+			color: #38b774;
+		}
+		/*banner*/
+		.banner{
+			position: relative;
+			width: 100%;
+			height: 460px;
+		}
+		.banner .pic li{
+			position: absolute;
+			display: none;
+			top: 0;
+			width: 100%;
+			height: 460px;
+			background: url(../images/banner3.jpg) no-repeat center top;
+		}
+		.banner .pic li.lord{
+			background-image: url(../images/banner4.jpg);
+		}
+		.banner .pic li.current{
+			display: block;
+		}
+		.banner .pic li .banner_c{
+			position: relative;
+		} 
+		.banner .pic li .banner_c .load{
+			position: absolute;
+			top: 85px;
+			right: 0;
+			width: 460px;
+			padding-top: 75px;
+		}
+		.banner .pic li .banner_c .load .online{
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 115px;
+			cursor: pointer;
+		}
+		.banner .pic li .banner_c .load .online dt{
+			width: 98px;
+			height: 37px;
+			padding-left: 17px;
+			background: url(../images/online.png) no-repeat 0 0;
+			line-height: 37px;
+			color: #191d3a;
+		}
+		.banner .pic li .banner_c .load .online:hover dt{
+			background-position: -120px 0;
+		}
+		.banner .pic li .banner_c .load .online dd{
+			display: none;
+			width: 101px;
+			padding: 2px 0 8px 14px;
+			border-bottom-left-radius: 15px;
+			border-bottom-right-radius: 15px;
+			background-color: #fff;
+			overflow: hidden;
+		}
+		.banner .pic li .banner_c .load .online:hover dd{
+			display: block;
+		}
+		.banner .pic li .banner_c .load .online dd a{
+			float: left;
+			width: 24px;
+			height: 24px;
+			margin: 0 8px 5px 0;
+			background: url(../images/online.png) no-repeat -1px -47px;
+		}
+		.banner .pic li .banner_c .load .online dd a.kaixin{
+			background-position: -51px -47px;
+		}
+		.banner .pic li .banner_c .load .online dd a.renren{
+			background-position: -76px -47px;
+		}
+		.banner .pic li .banner_c .load .online dd a.sina{
+			background-position: -101px -47px;
+		}
+		.banner .pic li .banner_c .load .intro{
+			width: 440px;
+			line-height: 30px;
+			color: #fff;
+		}
+		.banner .pic li .banner_c .load .download{
+			height: 36px;
+			padding-left: 30px;
+			margin-bottom: 7px;
+			background: url(../images/download.png) no-repeat 5px -30px;
+			font-size: 18px;
+			font-weight: bold;
+			line-height: 36px;
+			color: #fbc660;
+		}
+		.banner .pic li .banner_c .load .device{
+			width: 100%;
+			height: 106px;
+			text-align: center;
+		}
+		.banner .pic li .banner_c .load .device a{
+			float: left;
+			width: 83px;
+			height: 50px;
+			padding-top: 56px;
+			margin-right: 1px;
+			background: url(../images/pad.png) no-repeat -212px -182px rgba(255,255,255,0.2);
+			line-height: 50px;
+			color: #fff;
+		}
+		.banner .pic li .banner_c .load .device a.iphone{
+			background-position: -219px 18px;
+		}
+		.banner .pic li .banner_c .load .device a.and{
+			background-position: -220px -82px;
+		}
+		.banner .pic li .banner_c .load .device a.tv{
+			background-position: -216px -482px;
+		}
+		.banner .pic li .banner_c .load .device a.ipad{
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 5px;
+		}		
+		.banner .pic li .banner_c .load .device .ewm{
+			float: left;
+			width: 111px;
+			height: 93px;
+			padding-top: 13px;
+			background-color: rgba(255,255,255,0.6);
+			border-top-right-radius: 5px;
+			border-bottom-right-radius: 5px;
+		}
+		/*改斗地主的值*/
+		.banner .pic li.lord .banner_c .load{
+			top: 82px;
+		}
+		.banner .pic li.lord .banner_c .load .intro{
+			color: #191d3a;
+			margin-bottom: 18px;
+		}
+		.banner .pic li.lord .banner_c .load .download{
+			color: #191d3a;
+			background-position: 5px 10px;
+		}
+		.banner .pic li.lord .banner_c .load .device a{
+			background-color: rgba(255,255,255,0.6);
+			color: #444866;
+		}
+		.banner .pic li.lord .banner_c .load .device a.ipad{
+			background-position: 28px -182px;			
+		}
+		.banner .pic li.lord .banner_c .load .device a.iphone{
+			background-position: 26px 18px;
+		}
+		.banner .pic li.lord .banner_c .load .device a.and{
+			background-position: 21px -82px;
+		}
+		.banner .pic li.lord .banner_c .load .device a.tv{
+			background-position: 20px -482px;
+		}
+		.banner .pic li .banner_c .load .device a:hover{
+			background-color: #fff;
+			color: #444866;
+		}
+		.banner .pic li .banner_c .load .device a.ipad:hover{
+			background-position: 28px -182px;			
+		}
+		.banner .pic li .banner_c .load .device a.iphone:hover{
+			background-position: 26px 18px;
+		}
+		.banner .pic li .banner_c .load .device a.and:hover{
+			background-position: 21px -82px;
+		}
+		.banner .pic li .banner_c .load .device a.tv:hover{
+			background-position: 20px -482px;
+		}
+		.banner .sub{
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			width: 54px;
+			height: 12px;
+			padding-left: 15px;
+			margin-left: -34.5px;
+		}
+		.banner .sub li{
+			float: left;
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			margin-right: 15px;
+			background-color: rgba(255,255,255,0.5);
+		}
+		.banner .sub li.current{
+			background-color: rgba(255,255,255,1);
+		}
+		/*content区域*/
+		.content{
+			width: 100%;
+			background: url(../images/mainbg.jpg) no-repeat center bottom #ffffff;
+		}
+		.content .pro{
+			position: relative;
+			height: 229px;
+			padding-top: 50px;
+			border-bottom: 1px solid #dbe1e7;
+		}
+		.content .pro .pic{
+			position: relative;
+			width: 100%;
+			height: 192px;
+			overflow: hidden;
+		}
+		.content .pro .pic ul{
+			position: absolute;
+			left: 0;
+			width: 5000px;
+			height: 192px;
+		}
+		.content .pro .pic ul li{
+			float: left;
+			width: 218px;
+			height: 192px;
+			margin-right: 43px;
+			text-align: center;
+		}
+		.content .pro .pic ul li a{
+			display: block;
+			height: 192px;
+		}
+		.content .pro .pic ul li a:hover{
+			background-color: #38b774;
+		}
+		.content .pro .pic ul li img{
+			width: 218px;
+			height: 128px;
+		}
+		.content .pro .pic ul li a:hover img{
+			opacity: 0.8;
+			filter: alpha(opacity=80);
+		}
+		.content .pro .pic ul li h5{
+			padding-top: 1px;
+			padding-bottom: 5px;
+			height: 30px;
+			font-weight: bold;
+			line-height: 30px;
+		}
+		.content .pro .pic ul li a:hover h5{
+			color: #fff;
+		}
+		.content .pro .pic ul li span{
+			padding-right: 12px;
+			background: url(../images/arrow.png) no-repeat right center;
+			font-size: 12px;
+			color: #38b774;
+		}
+		.content .pro .pic ul li a:hover span{
+			color: #fff;
+			background-image: url(../images/arrow2.png);
+		}
+		.boyagame{
+			padding-top: 40px;
+			overflow: hidden;
+		}
+		.boyagame ul{
+			float: left;
+		}
+		.boyagame ul li{
+			width: 195px;
+			height: 80px;
+			border-bottom: 1px solid #CAD6E1;
+			line-height: 80px;
+			/*padding-left: 43px;
+			background: url(images/pad.png) no-repeat 0 -22px;*/
+		}
+		.boyagame ul li a.current{
+			background: url(../images/arrow.png) no-repeat right center;
+		}
+		.boyagame ul li a{
+			position: relative;
+			display: block;
+			padding-left: 54px;
+		}
+		.boyagame ul li a b{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 37px;
+			height: 80px;
+			background: url(../images/pad.png) no-repeat;
+		}
+		.boyagame ul li a b.iphone{
+			background-position: -125px 22px;
+		}
+		.boyagame ul li a b.and{
+			background-position: -4px -78px;
+		}
+		.boyagame ul li a b.ipad{
+			background-position: 0 -178px;
+		}
+		.boyagame ul li a b.pc{
+			background-position: 0 -274px;
+		}
+		.boyagame ul li a b.tv{
+			background-position: 0 -579px;
+		}
+		/*hover字体颜色*/
+		.boyagame ul li a.current{
+			color: #38b774;
+		}
+		/*背景图hover*/
+		.boyagame ul li a:hover b.iphone{
+			background-position: -125px 22px;
+		}
+		.boyagame ul li a:hover b.and{
+			background-position: -124px -78px;
+		}
+		.boyagame ul li a:hover b.ipad{
+			background-position: -121px -178px;
+		}
+		.boyagame ul li a:hover b.pc{
+			background-position: -120px -274px;
+		}
+		.boyagame ul li a:hover b.tv{
+			background-position: -43px -579px;
+		}
+		/*右侧信息展示*/
+		.boyagame ol{
+			width: 805px;
+			/*float: right;*/
+			overflow: hidden;
+		}
+		.boyagame ol li.ml{
+			margin-left: 48px;
+		}
+		.boyagame ol li{
+			width: 355px;
+			height: 327px;
+			float: left;
+			margin-right: 43px;
+			border: 1px solid pink;
+			background-color: #f7f7f7;
+			text-align: center;
+			margin-bottom: 42px;
+		}
+	/*	.boyagame ol li a{
+			display: block;
+			height: 327px;
+		}*/
+		.boyagame ol li.nomargin{
+			margin-right: 0;
+		}
+		.boyagame ol li:hover{
+			background: #FFF;
+		}
+		.boyagame ol li h4{
+			width: 100%;
+			height: 54px;
+			padding-top: 4px;
+			font-size: 16px;
+			line-height: 54px;
+		}
+		.boyagame ol li h4 span.chi:hover{
+			color: #38b774;
+		}
+		.boyagame ol li h4 span.eng{
+			color: #38b774;
+			font-size: 12px;
+			background: url(../images/arrow.png) no-repeat right center;
+			padding-right: 13px;
+			padding-left: 9px;
+		}
+		.boyagame ol li h4 img:hover{
+			opacity: 0.8;
+		}
+		.boyagame ol li h4 .app{
+			float: left;
+			width: 106px;
+			height: 36px;
+			margin-top: 20px;
+			border-right: 1px solid #c7d6e5;
+			line-height: 36px;
+			padding-left: 20px;
+			margin-left: 48px;
+			background: url(../images/icon.png) no-repeat 0 -347px;
+		}
+		.boyagame ol li h4 .ma{
+			float: right;
+			width: 141px;
+			height: 36px;
+			margin-top: 20px;
+			line-height: 36px;
+			padding-left: 10px;
+			margin-left: 25px;
+			background: url(../images/icon.png) no-repeat 0 -347px;
+		}
+		.boyagame ol li h4 p .app:hover,.boyagame ol li h4 p .ma:hover{
+				color: #38b774;
+		}
+		.boyagame .more{
+			display: block;
+			width: 213px;
+			height: 56px;
+			border-radius: 4px;
+			background: #38b774;
+			line-height: 56px;
+			text-align: center;
+			color: #fff;
+			margin-left: 520px;
+		}
+		.boyagame .more:hover{
+			background: #2BAA67;
+		}
+		.boyagame li{
+			position: relative;
+		}
+		.boyagame li a.tan{
+			position: absolute;
+			z-index: 3;
+			top: 150px;
+			left: 159px;
+			width: 131px;
+			height: 137px;
+			background: url(../images/ewmbg.png) no-repeat right center;
+		}
+
+		.content .pro ol{
+			position: absolute;
+			bottom: -6px;
+			left: 50%;
+			width: 50px;
+			height: 11px;
+			padding-left: 17px;
+			background-color: #fff;
+			margin-left: -33.5px;
+		}
+		.content .pro ol li{
+			float: left;
+			width: 11px;
+			height: 11px;
+			border-radius: 50%;
+			margin-right: 14px;
+			background-color: #b5c0cb;
+			cursor: pointer;
+		}
+		.content .pro ol li.current{
+			background-color: #2fbc71;
+		}
+		/*content区域的info区域*/
+		.content .info{
+			height: 310px;
+			padding-top: 53px;
+			padding-bottom: 57px;
+		}
+		.content .info .news{
+			float: left;
+			width: 500px;
+			height: 270px;
+			padding-top: 40px;
+			background: url(../images/newsbg2.jpg) no-repeat;
+		}
+		.content .info .jobs{
+			float: left;
+			width: 500px;
+			height: 270px;
+			padding-top: 40px;
+			background: url(../images/jobsbg2.jpg) no-repeat;
+		}
+		.content .info .top{
+			position: relative;
+			width: 284px;
+			height: 70px;
+		}
+		.content .info .top a{
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 64px;
+			height: 26px;
+			border: 1px solid #33b972;
+			border-radius: 3px;
+			font-family: "Microsoft Yahei";
+			font-size: 12px;
+			line-height: 26px;
+			text-align: center;
+			color: #30bd72;
+		}
+		.content .info .top a span{
+			position: relative;
+			top: -6px;
+			right: -5px;
+		}
+		.content .info .top a:hover{
+			background-color: #33b972;
+			color: #fff;
+		}
+		.content .info .jobs .top a{
+			border-color: #fff;
+			color: #fff;
+		}
+		.content .info .jobs .top a:hover{
+			background-color: #fff;
+			color: #30bd72;
+		}
+		/*info区域的bottom区域*/
+		.content .info .news .bottom{
+			padding: 0 20px;
+		}
+		.content .info .news .bottom ul li{
+			height: 49px;
+			border-bottom: 1px solid #dbe1e7;
+			line-height: 49px;
+		}
+		.content .info .news .bottom ul li a{
+			float: left;
+		}
+		.content .info .news .bottom ul li a:hover{
+			color: #38b774;
+		}
+		.content .info .news .bottom ul li span{
+			float: right;
+			font-size: 12px;
+			color: #afbecf;
+		}
+		.content .info .jobs .bottom{
+			width: 305px;
+			padding-left: 20px;
+		}
+		.content .info .jobs .bottom h3{
+			height: 21px;
+			font-weight: bold;
+			color: #fff;
+			line-height: 21px;
+		}
+		.content .info .jobs .bottom ul li{
+			height: 37px;
+			line-height: 37px;
+			border-bottom: 1px solid #6fdea3;
+		}
+		.content .info .jobs .bottom ul li a{
+			display: block;
+			color: #fff;
+		}
+		/*博雅游戏*/

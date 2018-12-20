@@ -1,0 +1,417 @@
+body,div,p,h1,h2,h3,h4,h5,h6,ul,ol,li,tr,td,th,dd,dl,dt{
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+		body{
+			font-size: 12px;
+			font-family: "Arial", "Helvetica", "sans-serif", "宋体";
+		}
+		/*公共类*/
+		a{
+			text-decoration: none !important;
+		}
+		/*版心*/
+		.box{
+			margin: 0 auto;
+		}
+		/*header部分*/
+		.box .hd{
+			position: relative;
+			width: 1440px;
+			height: 482px;
+			margin: 0 auto;
+		}
+		/*轮播图*/
+		.box .hd .nav_t li a{
+			position: absolute;
+			display: block;
+			width: 1440px;
+			height: 482px;
+			display: none;
+		}
+		.box .hd .nav_t li a.current{
+			z-index: 1;
+			display: block;
+		}
+		/*轮播图上的第一个导航*/
+		.box .hd .nav_b{
+			width: 1100px;
+			height: 30px;
+			position: absolute;
+			z-index: 3;
+			left: 50%;
+			margin-left: -550px;
+			top: 0;
+			background-color: rgba(43,43,43,0.5);
+		}
+		.box .hd .nav_b li{
+			float: right;
+			line-height: 30px;
+			color: #C9D4B4; 
+		}
+		.box .hd .nav_b li.li_nr{
+			width: 92px;
+			height: 30px;
+		}
+		.box .hd .nav_b li a.a_block{
+			display: block;
+			width: 92px;
+			height: 30px;
+		}
+		.box .hd .nav_b li a.a_block:hover{
+			color: #FFF;
+			background-color: rgba(43,43,43,0.8);
+		}
+		.box .hd .nav_b li a{
+			font: 12px/31px "SimSun","Microsoft Yahei";
+			text-align: center;
+			text-decoration: none;
+			color: #D4D4D4;
+		}
+		/*第一个导航结束*/
+		.box .hd .nav_giant{
+			width: 1100px;
+			height: 52px;
+			position: absolute;
+			z-index: 3;
+			left: 50%;
+			margin-left: -550px;
+			top: 30px;
+			background: url(../images/giant/nav_jianbian.png) repeat-x;
+		}
+		.box .hd .nav_giant li{
+			float: left;
+			height: 52px;
+			border-right: 1px solid #FBEAF2;
+		}
+		.box .hd .nav_giant li.nav_giant_nr{
+			width: 108px;
+			height: 52px;
+		}
+		.box .hd .nav_giant li.nav_giant_nr:hover{
+			background: #003858;
+		}
+		.box .hd .nav_giant a{
+			width: 108px;
+			height: 52px;
+			font: 12px/24px "SimSun";
+			color: #FFF;
+			font-weight: 700;
+			text-align: center;
+			margin-top: 5px;
+		}
+		.box .hd .nav_giant li.noborder{
+			border: none;
+		}
+		.box .hd .nav_giant li .input{
+			width: 163px;
+			height: 32px;
+			background: #EA096E url(../images/giant/input.png) no-repeat 132px center;
+			margin-top: 10px;
+			margin-left: 16px;
+			border: none;
+			border: none；
+		}
+		.box .hd .nav_giant li.input_r{
+			float: left;
+			border: none;
+			margin-left: 31px;
+			margin-top: 15px;
+		}
+
+		.box .hd .tiao{
+			width: 300px;
+			position: absolute;
+			z-index: 10;
+			height: 8px;
+			left: 50%;
+			bottom: 11px;
+			margin-left: -150px;
+		}
+		.box .hd .tiao li{
+			float: left;
+			margin-right: 2px;
+			width: 71px;
+			height: 8px;
+			background: rgba(150,150,200,0.5);
+		}
+		.box .hd .tiao a{
+			display: block;
+			width: 71px;
+			height: 8px;
+		}
+		.box .hd .tiao a.current{
+			background: rgba(255,128,185,1);
+		}
+		.box .hd .tiao a:hover{
+			background: rgba(255,128,185,1);
+		}
+		/*header结束*/
+		.bd .zhanshi{
+			position: relative;
+			width: 1100px;
+			height: 267px;
+			margin: 0 auto;
+			background: #FF80B9;
+		}
+		.bd .zhanshi div{
+			width: 313px;
+			height: 191px;
+			margin-right: 25px;
+			margin-top: 40px;
+		}
+		.bd .zhanshi div.im1{
+			background: url(../images/giant/im1.png);
+			float: left;
+			margin-left: 50px;
+		}
+		.bd .zhanshi div.im2{
+			background: url(../images/giant/im2.png);
+			float: left;
+		}
+		.bd .zhanshi div.im3{
+			background: url(../images/giant/im3.png);
+			float: left;
+		}
+		.bd .zhanshi a{
+			display: block;
+			height: 313px;
+			height: 191px;
+		}
+		.bd .zhanshi .bl{
+			position: absolute;
+			left: 9px;
+			top: 50%;
+			margin-top: -17px;
+			width: 34px;
+			height: 34px;
+		}
+		.bd .zhanshi .br{
+			position: absolute;
+			right: -14px;
+			top: 50%;
+			margin-top: -17px;
+			width: 34px;
+			height: 34px;
+		}
+		.bd .news{
+			width: 1073px;
+			height: 388px;
+			background: url(../images/giant/news_jianbian.png) repeat-x;
+			margin: 0 auto;
+			padding-top: 17px;
+			padding-left: 27px;
+		}
+		.bd .news .news_inner_c{
+			position: relative;
+			width: /*979px*/auto;
+			height: 365px;
+			background: url(../images/giant/bd_news_wenzi.png) no-repeat;
+		}
+		.bd .news .news_inner_c a{
+			position: absolute;
+			right: 23px;
+			top: 25px;
+			color: #727272;
+			font-size: 12px;
+			font-family: "Arial", "Helvetica", "sans-serif", "宋体";
+		}
+		.bd .news .news_inner_c a:hover{
+			color: red;
+		}
+		.bd .news .news_inner_c .newscenter{
+			position: absolute;
+			width: 81px;
+			height: 30px;
+			background: url(../images/giant/newsbg.png) no-repeat;
+		}
+		.bd .news .content{
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: /*949px*/auto;
+			height: 310px;
+			margin-top: 63px;
+		}
+		.bd .news .content li{
+			position: relative;
+			width: 467px;
+			height: 140px;
+			float: left;
+			border-bottom: 1px solid #CCC;
+			margin-right: 15px;
+			margin-left: 30px;
+		}
+		.bd .news .content li.news_b{
+			margin-top: 30px;
+		}
+		/*新闻压盖粉盒子*/
+		.bd .news .content ul .bg{
+			width: 81px;
+			height: 30px;
+			background: url(../images/giant/newsbg.gif) no-repeat;
+		}
+		.bd .news .content ul li img{
+			width: 225px;
+			height: 115px;
+			margin-top: -21px;
+			margin-left: 9px;
+			cursor: pointer;
+		}
+		.bd .news .content ul li a{
+			display: block;
+			width: 204px;
+			height: 19px;
+			position: absolute;
+			left: 275px;
+			top: 19px;
+		}
+		.bd .news .content ul li h5{
+			font-size: 14px;
+			font-weight: 700;
+			margin-left: -25px;
+			color: #464646;
+		}
+		.bd .news .content ul li .wenzi1{
+			width: 233px;
+			height: 34px;
+			cursor: pointer;
+			position: absolute;
+			left: 251px;
+			top: 60px;
+			font-size: 12px;
+			line-height: 18px;
+			color: #727272;
+		}
+		.bd .news .content ul li .wenzi2{
+			width: 233px;
+			height: 34px;
+			cursor: pointer;
+			position: absolute;
+			left: 251px;
+			top: 110px;
+			font-size: 12px;
+			line-height: 18px;
+			color: #727272;
+		}
+		.bd .giantworld{
+			width: 1100px;
+			height: 258px;
+			background: url(../images/giant/giantworld_bg.png) repeat-x;
+			margin: 0 auto;
+		/*	padding: 15px 100px;*/
+		}
+/*		.bd .giant ul{
+			margin: 15px 125px;
+		}*/
+		.bd .giantworld ul li.first{
+			margin-left: 125px;
+		}
+		.bd .giantworld ul li{
+			float: left;
+		}
+		.bd .giantworld ul li a{
+			color: #464646;
+			display: block;
+			float: left;
+			width: 250px;
+			height: 30px;
+			overflow: hidden;
+			background: url(../images/giant/more01.png) no-repeat center center;
+			padding-top: 145px;
+			padding-bottom: 3px;
+			text-align: center;
+			border-bottom: 1px solid #cbcbcb;
+			margin-bottom: 15px;
+			font-size: 14px;
+			font-weight: bold;
+			margin-right: 50px;
+			line-height: 25px;
+		}
+		.bd .giantworld ul li a:hover{
+			background-position: center 20px;
+			text-decoration: underline !important;
+		}
+		.bd .giantworld ul li .a2{
+			background: url(../images/giant/more02.png) no-repeat center center;
+		}
+		.bd .giantworld ul li .a3{
+			background: url(../images/giant/more03.png) no-repeat center center;
+		}
+/*		.bd .giantworld ul a{
+			
+			width: 250px;
+			height: 140px;
+			border-bottom: 1px solid #cbcbcb;
+		}*/
+		.bd .giantworld ul li p{
+			display: block;
+			font-size: 12px;
+			width: 250px;
+			height: 50px;
+			text-align: center;
+			cursor: pointer;
+			color: #464646;
+			/*这里有一个问题为什么p会上到li最上面了*/
+			/*margin-top: 10px;*/
+		}.bd .giantworld ul li p.lang{
+			height: 75px;
+		}
+		.ft{
+			position: relative;
+			width: 100%;
+			height: 80px;
+			margin-top: -10px;
+			background: url(../images/giant/ft_bg.png);
+			color: #767676;
+		}
+		.ft .ft_c{
+			margin: 0 auto;
+			width: 1100px;
+			position: relative;
+		}
+		.ft .ditu{
+			position: absolute;
+			width: 137px;
+			height: 18px;
+			background: url(../images/giant/ditu.gif) no-repeat;
+			left: 0;
+			top: 31px;
+			cursor: pointer;
+		}
+		.ft .zhandian{
+			position: absolute;
+			top: 32px;
+			left: 234px;
+			width: 865px;
+			height: 80px;
+			font-size: 12px;
+		}
+		.ft .zhandian a{
+			color: #767676;
+			font: 12px/20px "SimSun";
+		}
+		.ft .zhandian a:hover{
+			text-decoration: underline !important;
+			color: #FFF;
+		}
+		.ft .zhandian img{
+			vertical-align: middle;
+			cursor: pointer;
+		}
+		.ft .ft_r{
+			position: absolute;
+			right: 0;
+			top: 30px;
+		}
+		.ft .su{
+			position: absolute;
+			top: 50px;
+			right: 161px;
+		}
+		.ft .copy{
+			position: absolute;
+			top: 50px;
+			right: 0;
+		}

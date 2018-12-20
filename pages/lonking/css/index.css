@@ -1,0 +1,254 @@
+		.pagetop .banner{
+			width: 1920px;
+			height: 665px;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			margin-left: -960px;
+		}
+		.pagetop .banner ul li{
+			display: none;
+		}
+		.pagetop .banner ul li.current{
+			display: block;
+		}
+		/*banner区域结束*/
+		.pagetop .slide{
+			width: 15px;
+			height: 271px;
+			position: absolute;
+			top: 217px;
+			left: 0px;
+			background: url(lonking/images/banner_stick.png) no-repeat 6px 15px;
+		}
+		.pagetop .inner_c .slide li{
+			width: 15px;
+			margin-bottom: 70px;
+			height: 15px;
+			background: url(lonking/images/dot.png) no-repeat 0 0;
+		}
+		.pagetop .inner_c{
+			position: relative;
+		}
+		.pagetop .inner_c .slide img{
+			position: relative;
+			left: -77px;
+			top: -7px;
+			display: none;
+		}
+		.pagetop .inner_c .slide img.current{
+			display: block;
+		}
+		.pagetop .inner_c .slide li:hover img{
+			display: block;
+		}
+		.pagetop .inner_c .video{
+			width: 151px;
+			height: 89px;
+			position: absolute;
+			top: 498px;
+			right: 23px;
+		}
+		/*content区域*/
+		.content{
+			margin: 0 auto;
+		}
+		.content .dongtai{
+			margin: 0 auto;
+			height: 0px;
+			width: 1017px;
+		}
+		.content .dongtai h3{
+			font-size: 16px;
+			color: #3e3e3e;
+			width: 100px;
+			float: left;
+			margin-left: 20px;
+			line-height: 48px;
+			margin-top: 6px;
+		}
+		.content{
+			width: 1000px;
+			margin: 0 auto;
+			position: relative;
+		}
+		.content .dongtai{
+			width: 1000px;
+			height: 54px;
+			margin-top: 14px;
+			position: absolute;
+			top: -54px;
+			margin: 0 auto;
+			background: #fff;
+		}
+		.content .dongtai .scroll{
+			width: 537px;
+			height: 17px;
+			line-height: 17px;
+			overflow: hidden;
+			float: left;
+			margin-top: 23px;
+		}
+		.content .dongtai .scroll a{
+		/*	display: block;*/
+		}
+		.content .dongtai .scroll  li span{
+			margin-left: 10px;
+		}
+		.content .dongtai .btn{
+			width: 45px;
+			height: 15px;
+			float: right;
+			margin-right: 289px;
+			margin-top: 23px;
+		}
+		.content .dongtai .btn .left{
+			width: 22px;
+			display: block;
+			height: 15px;
+			background: url(lonking/images/btn_bg.png) no-repeat -1px 0;
+			float: left;
+			border-right: 1px solid #D7D7D7;
+		}
+		.content .dongtai .btn .left:hover{
+			background-position: -1px -17px;
+		}
+		.content .dongtai .btn .right{
+			width: 22px;
+			height: 15px;
+			background: url(lonking/images/btn_bg.png) no-repeat -24px 0;
+			display: block;
+			float: left;
+		}
+		.content .dongtai .btn .right:hover{
+			background-position: -24px -17px;
+		}
+		.content .dongtai .all{
+			float: right;
+			width: 67px;
+			height: 27px;
+			margin-top: -23px;
+			background-color: #dcdcdc;
+			line-height: 27px;
+			text-align: center;
+			color: #fff;
+		}
+		.content .dongtai .all:hover{
+			color: #3e3e3e;
+		}
+		/*展示区*/
+		.zhanshibg{
+			height: 900px;
+			width: 100%;
+			background: url(lonking/images/con_bg.png) no-repeat #eeedeb;
+		}
+		.zhanshibg .zhanshi{
+			margin:0 auto;
+		}
+		.zhanshibg .zhanshi .anli{
+			margin: 0 auto;
+			width: 960px;
+			height: 366px;
+			border-top: 1px solid #e0e0e0;
+			overflow: hidden;
+			padding: 0 20px;
+			background: #f3f3f3;
+		}
+		.zhanshibg .zhanshi .anli li{
+			float: left;
+			width: 304px;
+			margin-right: 24px;
+			height: 366px;
+			/*border: 1px solid red;*/
+		}
+		.zhanshibg .zhanshi .anli li h3{
+			overflow: hidden;
+		}
+		.zhanshibg .zhanshi .anli li.nomargin{
+			margin: 0;
+		}
+		.zhanshibg .zhanshi .anli li a.wenzi1{
+			font-size: 16px;
+			float: left;
+			line-height: 48px;
+			padding-top: 4px;
+			color: #3e3e3e;
+		}
+		.zhanshibg .zhanshi .anli li a.wenzi1:hover{
+			text-decoration: underline;
+		}
+		.zhanshibg .zhanshi .anli li a.wenzi2{
+			float: right;
+			color: #a9a9a9;
+			text-decoration: underline;
+			line-height: 48px;
+			padding-top: 4px;
+		}
+		.zhanshibg .zhanshi .anli li a.wenzi2:hover{
+			color: #3e3e3e;
+		}
+		.zhanshibg .zhanshi .anli li p.pic{
+			width: 289px;
+			height: 179px;
+			padding: 14px 0 0 10px;
+			background: url(lonking/images/bubble.png) no-repeat 0 1px;
+		}
+		.zhanshibg .zhanshi .anli li p.pic img{
+			width: 280px;
+			height: 159px;
+		}
+		.zhanshibg .zhanshi .anli li p.txt{
+			padding-top: 9px;
+			line-height: 23px;
+		}
+		.zhanshibg .zhanshi .hot{
+			width: 100%;
+			height: 190px;
+			border-top: 1px solid #e0e0e0;
+			overflow: hidden;
+			background: url(lonking/images/hot_bg.png) no-repeat left bottom #F3F3F3;
+		}
+		.zhanshibg .zhanshi .hot h3{
+			font-size: 16px;
+			line-height: 58px;
+			padding-left: 20px;
+			color: #3E3E3E;
+			float: left;
+		}
+		.zhanshibg .zhanshi .hot h3 a{
+			display: block;
+		}
+		.zhanshibg .zhanshi .hot h3:hover{
+			text-decoration: underline;
+		}
+		.zhanshibg .zhanshi .hot p{
+			width: 54px;
+			height: 23px;
+			border: 1px solid #D7D7D7;
+			border-radius: 1px;
+			float: right;
+			margin-top: 18px;
+			margin-right: 21px;
+
+		}
+		.zhanshibg .zhanshi .hot p a.lbtn{
+			display: block;
+			width: 26px;
+			height: 23px;
+			background: url(lonking/images/btn_bg.png) -2px -40px;
+			border-right: 1px solid #D7D7D7;
+			float: left;
+		}
+		.zhanshibg .zhanshi .hot p a.lbtn:hover{
+			background-position: -2px -66px;
+		}
+		.zhanshibg .zhanshi .hot p a.rbtn{
+			display: block;
+			width: 26px;
+			background: url(lonking/images/btn_bg.png) -29px -40px;
+			height: 23px;
+			float: right;
+		}
+		.zhanshibg .zhanshi .hot p a.rbtn:hover{
+			background-position: -29px -66px;
+		}

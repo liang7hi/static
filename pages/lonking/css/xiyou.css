@@ -1,0 +1,125 @@
+body{
+			background: #E9E9E9;
+		}
+		/*pagetop高度不够 默认css在common里 现在要层叠掉 另外忘记加背景图了*/
+		.pagetop{
+			height: 849px;
+		}
+		.cl{
+			position: relative;
+			/*overflow: hidden;*/
+		}
+		.cl .txt{
+			position: absolute;
+			text-align: center;
+			top: 167px;
+			left: 50%;
+			margin-left: -70px;
+			width: 140px;
+			height: 58px;
+		}
+		.cl .txt span.ch{
+			display: block;
+			font-size: 35px;
+			color: #fff;
+			font-weight: 700;
+			font-family: "Microsoft Yahei";
+		}
+		.cl .txt span.en{
+			color: #F9E3C8;
+			font-size: 18px;
+		}
+		/*banner下部nav*/
+		.cl .nav_bot{
+			height: 52px;
+			width: 100%;
+			background: #fff;
+			position: absolute;
+			top: 299px;
+			left: 0;
+			z-index: 5;
+		/*	overflow: hidden;*/
+		}
+		.cl .nav_bot .left{
+			float: left;
+			line-height: 52px;
+			margin-left: 20px;
+			/*overflow: hidden;*/
+		}
+		.cl .nav_bot .left .xiyou{
+			color: #BF7316;
+		}
+		.cl .nav_bot .right{
+			float: right;
+			width: 420px;
+			height: 52px;  
+		}
+		.cl .nav_bot .right li{
+			width: 104px;
+			float: left;
+			border-left: 1px solid #E7E7E7;
+			line-height: 52px;
+			text-align: center;
+			color: #878787;
+	
+		}
+		.cl .nav_bot .right li a{
+			display: block;
+			height: 52px;
+		}
+		.cl .nav_bot .right li a:hover{
+			color: #fff;
+			padding-bottom: 12px; 
+			background: url(../lonking/images/hoverbg.png) no-repeat;
+		}
+		/*.bg{
+			width: 100%;
+			height: 762px;
+			background: url(lonking/images/con_bg.png) no-repeat;
+		}*/
+		.content{
+			position: absolute;
+			left: 50%;
+			margin-left: -500px;
+			top: 351px;
+			width: 1000px;
+			height: 849px;
+			background: url(../lonking/images/cont_fruit_bg.png) no-repeat;
+
+		}
+		.content h3{
+			line-height: 93px;
+			font-size: 30px;
+			font-weight: 700;
+			padding-top: 51px;
+			margin-left: 51px;
+			margin-left: 51px;
+			color: #5C5C5C;
+		}
+		.content p{
+			font-size: 14px;
+			line-height: 25px;
+			color: #A1A1A1;
+			margin-left: 51px;
+			overflow: hidden;
+		}
+		.content p a{
+			display: block;
+			width: 75px;
+			height: 75px;
+			background: #EDEDED;
+			float: left;
+			line-height: 75px;
+			text-align: center;
+			margin-left: 2px;
+			margin-top: 26px;
+			font-size: 12px;
+			color: #5C5C5C;
+		}
+		.content p a.nomargin{
+			margin-left: 0;
+		}
+		.content p a:hover{
+			background: #F18400;
+			color: #FFF;
+		}

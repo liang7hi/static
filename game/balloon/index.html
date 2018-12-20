@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>打气球</title>
+	<style type="text/css">
+		.ballon{
+			width: 118px;
+			height: 168px;
+			background: url(images/ballon.png);
+			position: absolute;
+		}
+		body{
+			overflow: hidden;
+			width: 100%;
+			height: 100%;
+			background: url(images/bg.jpg);
+			background-size: cover;
+		}
+		html{
+			width: 100%;
+			height: 100%;
+			cursor: crosshair;
+		}
+		#info2{
+			text-align: center;
+			width: 100%;
+			height: 100%;
+			font-size: 50px;
+			line-height: 20px;
+			color: pink;
+		}
+		#info1{
+			color: skyblue;
+			font-weight: 700;
+			font-size: 30px;
+		}
+		#info3{
+			color: skyblue;
+			font-weight: 700;
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body>
+	<audio src="images/bgm1.flac" autoplay loop></audio>
+	<audio src="images/bomb1.wav" id="bomb"></audio>
+	<div id="box">
+		<div id="info1"></div>
+		<div id="info2"></div>
+		<div id="info3"></div>
+		<!-- <div class="ballon"></div> -->
+	</div>
+	<script type="text/javascript">
+	//**********************************************
+		function Ballon(){
+			// 定位
+			this.x = parseInt(Math.random() * (document.documentElement.clientWidth - 118));
+			// top:底下的位置 从下到上
+			this.y = document.documentElement.clientHeight;
+			// 随机类型 0 - 11
+			this.type = parseInt(Math.random() * 12 ); 
+			// 不同气球的速度 因为IIFE 所以做个备份
+			var self = this;
+			this.speed = function(){
+				if(self.type <= 8 ){
+					return self.type * 2 + 5;
+				}else if(self.type == 9){
+					return 20;
+				}else if(self.type == 10){
+					return 10;
+				}else if(self.type ==11 ){
+					return parseInt(Math.random() * 20)+ 1;
+				}
+			}();
+			this.init();
+			this.update();
+			arr.push(this);
+			console.log(this.x);
+		}
+
+
+//**********************************************
+		Ballon.prototype.init = function(){
+			// 获取dom
+			this.dom = document.createElement("div");
+			this.dom.className = "ballon";
+			document.getElementById("box").appendChild(this.dom);
+			// 初始定位位置
+			this.dom.style.left = this.x + "px";
+			this.dom.style.top = this.y + "px";
+			// 实例化的背景定位 不是宽度是每个气球的间距
+			this.dom.style.backgroundPosition = (this.type % 4 )  * -140 + "px " + parseInt(this.type / 4) * -176 + "px";
+		}
+
+
+//**********************************************
+		Ballon.prototype.update = function(){
+			this.y -= this.speed;
+			if(this.y <= -176){
+				this.goDie();
+			}
+			this.dom.style.top = this.y + "px";
+		}
+		// 新的数组
+		var arr = [];
+
+//**********************************************
+		// 狗带
+		Ballon.prototype.goDie = function(){
+				// 删除节点 2
+				this.dom.parentNode.removeChild(this.dom);
+				// document.getElementById("box").removeChild(this.dom);
+				for (var i = 0; i < arr.length; i++){
+					if(arr[i] == this){
+						arr.splice(i,1);
+					}
+				};
+			}
+//**********************************************
+		// 运动定时器
+		var score = 0;
+		var f = 0;
+		var time = 30;
+		// 各项状态
+		var info1 = document.getElementById("info1");
+		var info2 = document.getElementById("info2");
+		var info3 = document.getElementById("info3");
+//**********************************************
+		var timer = setInterval(function(){
+			// 帧编号++
+			f++;
+			info1.innerHTML = "帧编号：" + f;
+			info2.innerHTML = "分数：" + score;
+			info3.innerHTML = "时间：" + time;
+			if(f % 25 == 0){
+				new Ballon();
+			}
+			if(f % 50 == 0){
+				time--;
+			}
+			if(time < 0){
+				clearInterval(timer);
+				alert("你的分数是"+ score);
+			}
+			for (var i = 0; i < arr.length; i++) {
+				     arr[i].update();
+			};
+		},50);
+		// 分数
+
+		// 监听document
+		document.onclick = function(event){
+			var x = event.clientX;
+			var y = event.clientY;
+			console.log(x,y);
+			// console.log(arr[i].x);
+			// 遍历数组 x要和arr【i】对比 判断击打位置
+			for(var i = arr.length - 1 ; i >= 0 ;i-- ){
+
+				if(x > arr[i].x && x < arr[i].x + 118 &&
+				 y > arr[i].y && y < arr[i].y + 168 ){
+				 	// alert("message")
+					// 加分 通过type
+					if(arr[i].type <= 8){
+						score += arr[i].type + 1;
+					}else if(arr[i].type == 9){
+						score *= 2;
+					}else if(arr[i].type == 10){
+						score /= 2;
+					}else if(arr[i].type == 11){
+						// ？球
+						score = Math.random() > 0.5 ? score * 10 : 0;
+
+					}arr[i].goDie();
+					//播放声音
+					document.getElementById("bomb").load();
+					document.getElementById("bomb").play();
+				
+				}
+			}
+		}
+	</script>
+</body>
+</html>

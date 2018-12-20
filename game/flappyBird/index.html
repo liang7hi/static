@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FlappyBird</title>
+	<style type="text/css">
+		canvas{
+			border:1px solid #333;
+			margin-left: 500px;
+		}
+		body{
+			overflow: hidden;
+			background: -webkit-linear-gradient(skyblue , white);
+		}
+	</style>
+</head>
+<body>
+	<canvas id="canvas" width="414" height="650"></canvas>
+	<script type="text/javascript" src="js/lib/underscore-min.js"></script>
+	<script type="text/javascript" src="js/lib/simpleInheritance.js"></script>
+ 	<script type="text/javascript" src="js/Game.js"></script>
+ 	<script type="text/javascript" src="js/Background.js"></script>
+ 	<script type="text/javascript" src="js/Land.js"></script>
+ 	<script type="text/javascript" src="js/Pipe.js"></script>
+ 	<script type="text/javascript" src="js/Bird.js"></script>
+ 	<script type="text/javascript" src="js/SceneManager.js"></script>
+ 	<script type="text/javascript">
+ 		var game = new Game();
+ 	</script>
+</body>
+</html>

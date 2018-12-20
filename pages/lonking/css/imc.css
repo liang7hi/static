@@ -1,0 +1,112 @@
+body{
+			background: #E9E9E9;
+		}
+		/*pagetop高度不够 默认css在common里 现在要层叠掉 另外忘记加背景图了*/
+		.pagetop{
+			height: 351px;
+		}
+		.cl{
+			position: relative;
+			/*overflow: hidden;*/
+		}
+		.cl .txt{
+			position: absolute;
+			text-align: center;
+			top: 167px;
+			left: 50%;
+			margin-left: -70px;
+			width: 140px;
+			height: 58px;
+		}
+		.cl .txt span.ch{
+			display: block;
+			font-size: 35px;
+			color: #F28800;
+			font-weight: 700;
+			font-family: "Microsoft Yahei";
+		}
+		.cl .txt span.en{
+			color: #CFCFCF;
+			font-size: 18px;
+		}
+		/*banner下部nav*/
+		.cl .nav_bot{
+			height: 52px;
+			width: 100%;
+			background: #fff;
+			position: absolute;
+			top: 299px;
+			left: 0;
+			z-index: 5;
+		/*	overflow: hidden;*/
+		}
+		.cl .nav_bot .left{
+			float: left;
+			line-height: 52px;
+			margin-left: 20px;
+			/*overflow: hidden;*/
+		}
+		.cl .nav_bot .left .xiyou{
+			color: #BF7316;
+		}
+		.cl .nav_bot .right{
+			float: right;
+			width: 420px;
+			height: 52px;  
+		}
+		.cl .nav_bot .right li{
+			width: 104px;
+			float: right;
+			border-left: 1px solid #E7E7E7;
+			line-height: 52px;
+			text-align: center;
+			color: #878787;
+	
+		}
+		.cl .nav_bot .right li a{
+			display: block;
+			height: 52px;
+		}
+		.cl .nav_bot .right li a:hover{
+			color: #fff;
+			padding-bottom: 12px; 
+			background: url(../lonking/images/hoverbg.png) no-repeat;
+		}
+		.content{
+			width: 1000px;
+			margin: 0 auto;
+		/*	height: 431px;*/
+		}
+		.content ul{
+			width: 1000px;
+			height: 386px;
+			padding-top: 40px;
+			padding-bottom: 5px;
+			overflow: hidden;
+		}
+		.content ul li{
+			width: 306px;
+			height: 385px;
+			float: left;
+			margin-left: 20px;
+			position: relative;
+		}
+		.content ul li p{
+			position: absolute;
+			bottom: -6px;
+			left: 0;
+			width: 306px;
+			height: 50px;
+			background-color: rgba(133,133,133,0.9);
+			color: #FFF;
+			font-size: 16px;
+			line-height: 50px;
+			text-align: center;
+		}
+		.content ul li p:hover{
+			background: url(../lonking/images/spread_label_hover.png) no-repeat;
+			padding-top: 15px;
+		}
+		/*over*/
+
+
