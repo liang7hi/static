@@ -1,46 +1,45 @@
-.carsousel{
-    width:800px;
-    height:500px;
-    margin:100px auto;
-    position: relative;
-    /* overflow-y: hidden; */
+.carsousel {
+  width: 800px;
+  height: 500px;
+  margin: 100px auto;
+  position: relative;
 }
-.carsousel ul li{
-    display:none;
+.carsousel ul li {
+  display: none;
 }
-.carsousel ul li a img{
-    width:800px;
-    height:500px;
+.carsousel ul li a img {
+  width: 800px;
+  height: 500px;
 }
-.carsousel ul li.cur{
-    display:block;
+.carsousel ul li.cur {
+  display: block;
 }
-.carsousel .btns a{
-    position: absolute;
-    top:50%;
-    width:60px;
-    height:80px;
-    margin-top: -40px;
-    background: #FFF;
-    opacity:0.6;
-    border-radius: 10px;
+.carsousel .btns a {
+  position: absolute;
+  top: 50%;
+  width: 60px;
+  height: 80px;
+  margin-top: -40px;
+  background: #fff;
+  opacity: 0.6;
+  border-radius: 10px;
 }
-.carsousel .btns{
-    border-radius: 60%;
+.carsousel .btns {
+  border-radius: 60%;
 }
-.carsousel .btns a:nth-child(1){
-    left:0px;
+.carsousel .btns a:nth-child(1) {
+  left: 0px;
 }
-.carsousel .btns a:nth-child(2){
-    right:0px;
+.carsousel .btns a:nth-child(2) {
+  right: 0px;
 }
-.carsousel .cover_box{
-    position: absolute;
-    top:0px;
-    left:0px;
-    width:100%;
-    height: 100%;
-    width:800px;
-    height:500px;
-    perspective:10000px;
+.carsousel .cover_box {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  width: 800px;
+  height: 500px;
+  perspective: 10000px;
 }
